@@ -11,6 +11,9 @@ import { NavComponent } from './components/template/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
+import { MatCardModule } from '@angular/material/card';
+import { EstadoCrudComponent } from './views/estado-crud/estado-crud.component';
+import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { HomeComponent } from './views/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    EstadoCrudComponent,
+    CidadeCrudComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,8 @@ import { HomeComponent } from './views/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
