@@ -6,3 +6,11 @@ form {
 button {
     margin: 20px 10px 0 0;
 }
+
+mat-card-title {
+    padding: 10px 20px;
+}
+
+mat-form-field {
+    padding: 0 20px;
+}

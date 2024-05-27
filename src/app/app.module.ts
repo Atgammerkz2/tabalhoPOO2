@@ -21,7 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { EstadoReadComponent } from './components/estado/estado-read/estado-read.component';
 import { EstadoReadSchematicsComponent } from './components/estado/estado-read-schematics/estado-read-schematics.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -40,7 +39,6 @@ import { EstadoDeleteComponent } from './components/estado/estado-delete/estado-
     EstadoCrudComponent,
     CidadeCrudComponent,
     EstadoCreateComponent,
-    EstadoReadComponent,
     EstadoReadSchematicsComponent,
     EstadoUpdateComponent,
     EstadoDeleteComponent
