@@ -14,6 +14,21 @@ import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { EstadoCrudComponent } from './views/estado-crud/estado-crud.component';
 import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
+import { EstadoCreateComponent } from './components/estado/estado-create/estado-create.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { EstadoReadComponent } from './components/estado/estado-read/estado-read.component';
+import { EstadoReadSchematicsComponent } from './components/estado/estado-read-schematics/estado-read-schematics.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
+import { EstadoUpdateComponent } from './components/estado/estado-update/estado-update.component';
+import { EstadoDeleteComponent } from './components/estado/estado-delete/estado-delete.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +38,12 @@ import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
     NavComponent,
     HomeComponent,
     EstadoCrudComponent,
-    CidadeCrudComponent
+    CidadeCrudComponent,
+    EstadoCreateComponent,
+    EstadoReadComponent,
+    EstadoReadSchematicsComponent,
+    EstadoUpdateComponent,
+    EstadoDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +52,17 @@ import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
